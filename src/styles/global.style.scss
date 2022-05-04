@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f1ff90;
+    background: linear-gradient(135deg, #ffd23355 25%, transparent 25%) -25px 0/
+            50px 50px,
+        linear-gradient(225deg, #ffd233 25%, transparent 25%) -25px 0/ 50px 50px,
+        linear-gradient(315deg, #ffd23355 25%, transparent 25%) 0px 0/ 50px 50px,
+        linear-gradient(45deg, #ffd233 25%, #f1ff90 25%) 0px 0/ 50px 50px;
+}
+
+.body-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+    padding: 40px 0;
+    align-self: center;
+}
+//colors
+$blue-dark: #002e42;
+$blue-light: #005da2;
+$blue-highlight: #3d84bb;
+$orange-dark: #ff6c3d;
+$orange-light: #ffd233;
+$yellow: #f1ff90;

@@ -1,0 +1,54 @@
+@use "./global.style.scss" as g;
+
+.projects-root {
+    position: relative;
+    z-index: 2;
+    background: g.$blue-light;
+    color: white;
+
+    padding: 0 40px 40px;
+
+    img {
+        width: 320px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .project-item {
+        padding: 20px;
+        display: flex;
+        gap: 40px;
+        border-radius: 10px;
+
+        .project-description {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            line-height: 1.6rem;
+        }
+
+        &:hover {
+            background: g.$blue-highlight;
+        }
+    }
+
+    .more-projects {
+        width: 50%;
+        text-align: center;
+        position: relative;
+        background: g.$blue-highlight;
+        margin: 40px auto 0;
+        padding: 10px;
+        border-radius: 10px;
+        color: g.$orange-light;
+        &:hover {
+            background: g.$orange-dark;
+        }
+    }
+    .tech-block {
+        padding: 2px 5px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,57 @@
+@use "./global.style.scss" as g;
+
+.contact-root {
+    position: relative;
+    background: g.$orange-dark;
+    padding: 0 40px 40px;
+    color: white;
+
+    .contact-block {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+
+        .contact-col {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .button {
+            color: black;
+            background: g.$orange-light;
+            margin: 40px 0;
+            align-self: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 0px rgba(#000, 0.3);
+            transform: translate(0px, 0px);
+            transition: 0.3s;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            &:hover {
+                box-shadow: 6px 6px 0px rgba(#000, 0.3);
+                transform: translate(-4px, -4px);
+                background: g.$yellow;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    .networks {
+        display: flex;
+        gap: 40px;
+
+        .button {
+            padding: 9px 20px;
+        }
+        img {
+            width: 40px;
+        }
+    }
+}

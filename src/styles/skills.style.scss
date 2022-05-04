@@ -1,0 +1,84 @@
+@use "./global.style.scss" as g;
+
+.skills-root {
+    background: g.$orange-light;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    color: g.$blue-dark;
+
+    .skills-list {
+        color: g.$yellow;
+        display: flex;
+        justify-content: space-evenly;
+        & > :nth-child(2) {
+            border-left: 1px solid g.$yellow;
+            border-right: 1px solid g.$yellow;
+        }
+    }
+    img {
+        max-height: 100px;
+        max-width: 70%;
+        object-fit: contain;
+        filter: drop-shadow(0 0 8px rgba(#777, 0.7));
+        margin: 20px;
+    }
+
+    .skills-cat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        padding-bottom: 40px;
+        transition: 0.5s;
+        h2 {
+            margin: 10px;
+        }
+        .duo {
+            display: flex;
+            & div {
+                flex: 1;
+                align-self: center;
+            }
+        }
+
+        .logo-desc {
+            position: relative;
+            text-align: center;
+            > p {
+                font-size: 22px;
+                font-weight: bolder;
+                text-shadow: 0 0 4px rgba(#333, 0);
+                white-space: nowrap;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: transparent;
+                transition: 0.3s;
+                filter: brightness(1) drop-shadow(0 0 8px rgba(#333, 0));
+            }
+            &:hover {
+                img {
+                    transition: 0.3s;
+                    filter: brightness(0.3) drop-shadow(0 0 8px rgba(#333, 0.8));
+                }
+                p {
+                    text-shadow: 0 0 4px rgba(#333, 1);
+                    color: white;
+                }
+            }
+        }
+
+        background: linear-gradient(g.$orange-light 50%, g.$yellow 100%);
+        background-size: 100% 200%;
+        background-position: top;
+        transition: 0.3s;
+        &:hover {
+            transition: 0.3s;
+            background-position: bottom;
+            color: g.$orange-dark;
+        }
+    }
+}
