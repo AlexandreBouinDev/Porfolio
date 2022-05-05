@@ -7,9 +7,14 @@ import "../styles/presentation.style.scss";
 export default function Presentation() {
     return (
         <div className="presentation-root" id="#">
-            <img src={alexandre} alt="Avatar" />
+            <div>
+                <img src={alexandre} alt="Avatar" />
+                <h1 className="title resp">"Salut à toi jeune recruteur !"</h1>
+            </div>
             <div className="presentation-text">
-                <h1>"Salut à toi jeune recruteur !"</h1>
+                <h1 className="title notresp">
+                    "Salut à toi jeune recruteur !"
+                </h1>
                 <p>
                     J'ai 27 ans et suis originaire de Rouen (76). À la base
                     scientifique de formation majoritairement universitaire,

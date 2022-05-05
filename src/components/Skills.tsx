@@ -54,10 +54,7 @@ export default function Skills() {
                         </div>
                     </div>
                 </div>
-                <div
-                    className="skills-cat others"
-                    style={{ flexDirection: "column" }}
-                >
+                <div className="skills-cat others">
                     <h2>AUTRES</h2>
                     <div className="logos others">
                         <TechnoLogo title="Python" src={python} />

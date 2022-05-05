@@ -1,0 +1,111 @@
+@use "./global.style.scss" as g;
+
+@media screen and(max-width: g.$break-m) {
+    .body-content {
+        max-width: 1200px;
+        width: 90vw;
+
+        .skills-root {
+            h2 {
+                font-size: 16px;
+            }
+            img {
+                max-width: 50%;
+                margin: 10px;
+            }
+            .skills-cat.others {
+                min-width: 30%;
+            }
+            .logo-desc b {
+                font-size: 16px;
+            }
+        }
+
+        .projects-root {
+            .project-item {
+                padding: 20px 0;
+            }
+            img {
+                width: 240px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: g.$break-s) {
+    .body-content {
+        width: 95vw;
+
+        .presentation-root {
+            flex-direction: column;
+
+            img {
+                max-width: 20%;
+                object-fit: contain;
+                margin: 10px;
+            }
+
+            .title.resp {
+                display: block;
+            }
+            .title.notresp {
+                display: none;
+            }
+            :first-child {
+                display: flex;
+                width: 100%;
+                gap: 20px;
+                white-space: nowrap;
+            }
+            .presentation-text {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: g.$break-xs) {
+    html {
+        font-size: 0.8rem;
+    }
+    .skills-root .skills-cat.others {
+        flex-direction: row !important;
+        border: none !important;
+        padding: 0 20px;
+        .logos.others {
+            flex-direction: row;
+        }
+    }
+    .skills-list {
+        flex-direction: column;
+        .skills-leftpart > div {
+            border-bottom: 1px solid g.$yellow;
+        }
+    }
+    .body-content {
+        .projects-root {
+            padding: 0 20px 40px;
+            .project-item {
+                gap: 20px;
+            }
+            img {
+                width: 150px;
+                height: 100px;
+                border-radius: 10px;
+            }
+        }
+
+        .contact-root {
+            padding: 0 20px 40px;
+            .networks {
+                flex-direction: column;
+                gap: 0;
+                .button {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}

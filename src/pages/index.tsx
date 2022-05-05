@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import Layout from "../components/Layout";
 import NavBar from "../components/NavBar";
 import Presentation from "../components/Presentation";
 import Skills from "../components/Skills";
@@ -9,7 +9,7 @@ import Contact from "../components/Contact";
 
 const IndexPage = () => {
     return (
-        <div className="root">
+        <Layout>
             <NavBar />
             <div className="body-content">
                 <Presentation />
@@ -18,7 +18,7 @@ const IndexPage = () => {
                 <Projects />
                 <Contact />
             </div>
-        </div>
+        </Layout>
     );
 };
 
