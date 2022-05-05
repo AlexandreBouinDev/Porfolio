@@ -5,7 +5,15 @@ const config: GatsbyConfig = {
         title: `Portfolio`,
         siteUrl: `https://alexandrebouindev.netlify.app/`,
     },
-    plugins: ["gatsby-plugin-sass"],
+    plugins: [
+        "gatsby-plugin-sass",
+        {
+            resolve: "gatsby-plugin-manifest",
+            options: {
+                icon: "src/images/favicon.png",
+            },
+        },
+    ],
 };
 
 export default config;

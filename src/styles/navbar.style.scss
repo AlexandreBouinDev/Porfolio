@@ -30,7 +30,8 @@
     }
 
     @media screen and(max-width: g.$break-xs) {
-        font-size: 1.2rem;
+        font-size: 14px;
+        text-align: center;
 
         .links {
             gap: 0;

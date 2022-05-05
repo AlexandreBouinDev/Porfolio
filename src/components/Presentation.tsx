@@ -38,7 +38,7 @@ export default function Presentation() {
                     Ordinateur (MAO), le graphisme (Photoshop, Illustrator,
                     AfterEffects), les puzzle-games et les jeux de plateaux.
                 </p>
-                <p style={{ alignSelf: "flex-end" }}>
+                <p style={{ alignSelf: "flex-end", whiteSpace: "nowrap" }}>
                     <b>- Alexandre Bouin</b>
                 </p>
             </div>
