@@ -3,7 +3,7 @@
 .projects-root {
     position: relative;
     z-index: 2;
-    background: g.$blue-light;
+    background: rgba(g.$blue-light, 0.5);
     color: white;
 
     padding: 0 40px 40px;
@@ -12,14 +12,14 @@
         width: 320px;
         height: 200px;
         object-fit: cover;
-        border-radius: 10px;
+        border-radius: 20px;
     }
 
     .project-item {
         padding: 20px;
         display: flex;
         gap: 40px;
-        border-radius: 10px;
+        border-radius: 20px;
 
         .project-description {
             display: flex;
@@ -34,16 +34,34 @@
     }
 
     .more-projects {
-        width: 50%;
-        text-align: center;
-        position: relative;
-        background: g.$blue-highlight;
-        margin: 40px auto 0;
-        padding: 10px;
-        border-radius: 10px;
-        color: g.$orange-light;
-        &:hover {
-            background: g.$orange-dark;
+        display: flex;
+        justify-content: center;
+        a {
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            color: black;
+            width: 50%;
+            background: g.$orange-light;
+            margin: 40px 0;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 0px rgba(#000, 0.3);
+            transform: translate(0px, 0px);
+            transition: 0.3s;
+            img {
+                height: 30px;
+                width: 30px;
+            }
+            &:hover {
+                cursor: pointer;
+                box-shadow: 6px 6px 0px rgba(#000, 0.3);
+                transform: translate(-4px, -4px);
+                background: g.$yellow;
+                transition: 0.3s;
+            }
         }
     }
     .tech-block {

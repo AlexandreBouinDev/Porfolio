@@ -1,7 +1,7 @@
 @use "./global.style.scss" as g;
 
 .career-root {
-    background: g.$blue-dark;
+    background: rgba(g.$blue-dark, 0.9);
     color: white;
     .wrapper {
         display: flex;
@@ -11,7 +11,7 @@
     .time-line {
         background: g.$orange-light;
         width: 10px;
-        height: 1500px;
+        height: 100%;
         position: absolute;
         margin-left: 130px;
     }
@@ -24,7 +24,7 @@
         background: linear-gradient(
             to right,
             g.$blue-light 50%,
-            g.$blue-dark 50%
+            transparent 50%
         );
         background-size: 200% 100%;
         background-position: right;
@@ -80,8 +80,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 2;
-        box-shadow: 0 -8px 8px rgba(#000, 0.2);
+        z-index: 3;
+        box-shadow: 0 8px 8px rgba(#000, 0.2);
         &:hover {
             cursor: pointer;
             background: g.$blue-highlight;

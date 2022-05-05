@@ -6,11 +6,12 @@ import dotter from "../images/dotter.png";
 import documentation from "../images/documentation.png";
 import encours from "../images/wip.png";
 import moltak from "../images/Moltak.jpg";
+import github from "../images/github.png";
 
 export default function Projects() {
     return (
         <div className="projects-root" id="projects">
-            <h1>🕸 Mes projets web</h1>
+            <h1>Mes projets web</h1>
             <div className="projects-list">
                 <ProjectItem
                     title="Dotter.science"
@@ -55,10 +56,11 @@ export default function Projects() {
                     href="https://github.com/AlexandreBouinDev"
                     target={"_blank"}
                 >
-                    <h3>👉 Plus de projets sur mon profil GitHub</h3>
+                    <h3>Plus de projets sur mon profil GitHub</h3>
+                    <img src={github} alt="GitHub" />
                 </a>
             </div>
-            <h1>🎵 Mes autres projets</h1>
+            <h1>Mes autres projets</h1>
             <div className="projects-list">
                 <a
                     className="project-item"

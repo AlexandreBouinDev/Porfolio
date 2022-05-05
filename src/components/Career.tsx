@@ -21,7 +21,7 @@ export default function Career() {
         <div className={opened} id="career">
             <div className="wrapper">
                 <div className="time-line"></div>
-                <h1>🚩 Parcours 🚩</h1>
+                <h1>Parcours</h1>
                 <div className="event-list">
                     <CareerEvent
                         date={2021}

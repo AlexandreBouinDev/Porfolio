@@ -8,7 +8,7 @@ import linkedin from "../images/linkedin.png";
 export default function Contact() {
     return (
         <div className="contact-root" id="contact">
-            <h1>💬 Contact 💬</h1>
+            <h1>Contact</h1>
             <div className="contact-block">
                 <div className="contact-col">
                     <h2>Par mail </h2>
