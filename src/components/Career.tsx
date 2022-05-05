@@ -56,7 +56,7 @@ export default function Career() {
                     <CareerEvent
                         date={2012}
                         title="🧪 BTS Bioanalyses et Contrôles"
-                        details="Université de Rouen"
+                        details="Lycée Senghor, Evreux (27)"
                     />
                     <CareerEvent
                         date={2012}
