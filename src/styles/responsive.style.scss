@@ -37,6 +37,15 @@
     .body-content {
         width: 95vw;
 
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+        }
         .presentation-root {
             flex-direction: column;
 
@@ -85,6 +94,16 @@
         }
     }
     .body-content {
+        width: 100vw;
+        h1 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 12px;
+        }
         .projects-root {
             padding: 0 20px 40px;
             .project-item {

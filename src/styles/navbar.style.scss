@@ -31,8 +31,14 @@
 
     @media screen and(max-width: g.$break-xs) {
         font-size: 1.2rem;
+
         .links {
             gap: 0;
+            width: 100%;
+            justify-content: space-evenly;
+            a {
+                flex: 1;
+            }
         }
     }
 }
