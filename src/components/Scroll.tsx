@@ -11,12 +11,10 @@ interface IScrollProps {
 }
 
 function Scroll({ showBelow }: IScrollProps) {
-    console.log("button");
     const [show, setShow] = useState(showable(showBelow));
 
     const handleScroll = () => {
         setShow(showable(showBelow));
-        console.log(show);
     };
 
     const handleClick = () => {

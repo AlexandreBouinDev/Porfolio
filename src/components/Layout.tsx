@@ -6,7 +6,6 @@ interface ILayoutProps {
     children: any;
 }
 function Layout({ children }: ILayoutProps) {
-    console.log("TOTO");
     return (
         <div>
             <Helmet
