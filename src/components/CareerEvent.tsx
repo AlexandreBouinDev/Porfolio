@@ -17,7 +17,7 @@ export default function CareerEvent({
     if (skills !== undefined) {
         xSkills = (
             <div className="content-skills">
-                <b>Compétences acquises :</b>
+                <b>Compétences acquises : </b>
                 {skills}
             </div>
         );
@@ -33,8 +33,10 @@ export default function CareerEvent({
                 <div className="content-title">
                     <b>{title}</b>
                 </div>
+                <div className="content-details">
+                    <em>{details}</em>
+                </div>
                 {xSkills}
-                <div className="content-details">{details}</div>
             </div>
         </div>
     );

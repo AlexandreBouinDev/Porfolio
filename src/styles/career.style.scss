@@ -45,10 +45,15 @@
         .content {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+
             padding-left: 60px;
+            line-height: 1.8rem;
             .content-title {
+                font-size: 18px;
                 color: g.$orange-light;
+            }
+            .content-details {
+                padding-bottom: 10px;
             }
         }
 

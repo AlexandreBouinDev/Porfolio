@@ -26,7 +26,7 @@ export default function Career() {
                     <CareerEvent
                         date={2021}
                         title="💻 Formation Développeur Web Niveau 5 en alternance"
-                        skills="Développer en JS (React, Vue, Node), API REST, gestion d'une Base de donnée (SQL)"
+                        skills="Développer en JS (React, Vue, Node), construire une API REST, gérer une Base de donnée (MongoDB et mySQL), versionner un projet avec Git"
                         details="École : OpenClassrooms.com | Entreprise : KerNel Biomedical"
                     />
                     <CareerEvent

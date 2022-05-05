@@ -18,9 +18,8 @@ export default function Presentation() {
                 <p>
                     J'ai 27 ans et suis originaire de Rouen (76). À la base
                     scientifique de formation majoritairement universitaire,
-                    puis enseignant en biologie, je suis désormais en
-                    reconversion professionnelle dans le domaine du
-                    développement web.
+                    puis enseignant en biologie, je suis désormais{" "}
+                    <b>développeur web fullstack</b> en reconversion.
                 </p>
                 <p>
                     Actuellement, je me forme en alternance et sur des projets
@@ -30,17 +29,14 @@ export default function Presentation() {
                     l'expérience en entreprise. Ainsi, la double casquette
                     étudiant/salarié m'offre une courbe de progression
                     extrêmement intéressante. En très peu de temps j'ai pu
-                    apprendre et maîtriser des technologies diverses : React,
-                    Vue, Node, Python, etc...
+                    apprendre et maîtriser des technologies diverses :{" "}
+                    <b>React, Vue, Node, Python, etc...</b>
                 </p>
                 <p>
                     En dehors de l'aspect professionnel, je m'intéresse à
-                    beaucoup d'autres choses : passionné de Musique Assistée par
-                    Ordinateur (MAO) et de musiques électroniques, adepte des
-                    logiciels de graphisme également (Photoshop, Illustrator,
-                    After Effects), je suis très porté par l'univers du jeu
-                    vidéo et particulièrement par les jeux de réflexion (se
-                    prendre la tête c'est une passion) et joueur de boardgames.
+                    beaucoup d'autres choses : la Musique Assistée par
+                    Ordinateur (MAO), le graphisme (Photoshop, Illustrator,
+                    AfterEffects), les puzzle-games et les jeux de plateaux.
                 </p>
                 <p style={{ alignSelf: "flex-end" }}>
                     <b>- Alexandre Bouin</b>
