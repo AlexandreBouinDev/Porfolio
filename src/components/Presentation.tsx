@@ -1,14 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 import alexandre from "../images/alexandre.jpg";
+import glasses from "../images/glasses.png";
 
 import "../styles/presentation.style.scss";
 
 export default function Presentation() {
+    const [count, setCount] = useState(1);
+    const [customClass, setCustomClass] = useState("glasses");
+
+    function counter() {
+        setCount(count + 1);
+        console.log(
+            `Plus que ${5 - count} clics pour passer en Mode Développeur `
+        );
+        if (count === 5) {
+            setCustomClass("glasses active");
+            console.log("Mode Développeur activé !");
+        }
+    }
+
     return (
         <div className="presentation-root" id="#">
             <div>
-                <img src={alexandre} alt="Avatar" />
+                <div className="picture">
+                    <img src={glasses} className={customClass} />
+                    <img
+                        src={alexandre}
+                        alt="Avatar"
+                        className="avatar"
+                        onClick={() => counter()}
+                    />
+                </div>
                 <h1 className="title resp">"Salut à toi jeune recruteur !"</h1>
             </div>
             <div className="presentation-text">

@@ -49,10 +49,23 @@
         .presentation-root {
             flex-direction: column;
 
-            img {
-                max-width: 30%;
-                object-fit: contain;
-                margin: 10px;
+            .picture {
+                display: flex;
+                max-width: 20vw;
+                .avatar {
+                    position: relative;
+                    object-fit: scale-down;
+                    margin: 10px;
+                    width: 100%;
+                }
+                .glasses {
+                    width: 8vw;
+                    left: 7.2vw;
+                    top: -300px;
+                    &.active {
+                        top: 17.2%;
+                    }
+                }
             }
 
             .title.resp {
@@ -111,6 +124,15 @@
                 font-size: 14px;
                 b {
                     display: inline;
+                }
+            }
+            .picture {
+                .glasses {
+                    left: 7.9vw;
+                    top: -300px;
+                    &.active {
+                        top: 19%;
+                    }
                 }
             }
         }
